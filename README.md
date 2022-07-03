@@ -1,15 +1,7 @@
 # NetCoreMiddleWare
-### Startup.cs
- ```cs 
- public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-           //......
-            app.UseLogging();
-        }
-  ```
   ### LoggingMiddleware.cs
  ```cs 
-  using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -58,4 +50,12 @@ namespace NetCoreMiddleWare.MiddleWare
         }
     }
 }
+  ```
+  ### Startup.cs
+ ```cs 
+ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        {
+           //......
+            app.UseLogging();
+        }
   ```
